@@ -1,0 +1,19 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/rust:latest",
+    "hostRequirements": {
+      "cpus": 2
+    },
+    "waitFor": "onCreateCommand",
+    "updateContentCommand": "apt-get install -y build-essential",
+    "postCreateCommand": "",
+    "customizations": {
+      "codespaces": {
+        "openFiles": []
+      },
+      "vscode": {
+        "extensions": [
+          "rust-lang.rust-analyzer"
+        ]
+      }
+    }
+  }
