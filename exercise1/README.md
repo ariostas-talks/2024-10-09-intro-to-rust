@@ -1,14 +1,9 @@
 # Exercise 1
 
-The [Collatz conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture) states that starting with a positive integer number and repeatedly applying the following function will allways eventually get to 1.
+This directory contains a very simple example crate. You can find the code in `src/main.rs'. The code has multiple issues, so we will tackle them one my one.
 
-$$
-f(n)=\begin{cases}
-n/2, \qquad &\text{if } n \text{ is even},\\
-3n+1, \qquad &\text{otherwise}
-\end{cases}
-$$
+1. The code has some very wacky formatting, so it's quite difficult to read. Let's fix this with cargo by running the formatter (`cargo fmt`).
 
-The `cpp` directory contains a simple C++ algorithm that finds the steps it takes to get to 1. To build, you simply need to run `make`, and then you can run it with `./collatz [positive integer]`. However, as you'll see, the output is nonsense, so there is a bug in the code!
+2. The code doesn't even compile! Try running `cargo build` to see what it complains about. Luckily, the Rust compiler is very helpful and often tells us how the code most likely was sopposed to look like. Fix it, and then verify that it runs with `cargo run`.
 
-The `rust` directory contains some Rust scaffolding to help you translate the algorithm into Rust. Finish the algorithm to find out what the issue was and why it's impossible to have this kind of bugs in (safe) Rust. To build and run it, go to the `rust` directory and use `cargo run [positive integer]`.
+3. Even though the code now runs, there is something that could still be improved. This is where `clippy` comes in. It is likely that you already have it installed, but you can run `rustup component add clippy` to make sure. Then you can use `cargo clippy` to run it. Often, it can fix the issues that it finds by using `cargo clippy --fix`.

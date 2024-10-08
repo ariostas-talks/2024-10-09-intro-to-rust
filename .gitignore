@@ -60,5 +60,5 @@ slides
 .DS_Store
 
 # Exercise binaries
-exercise1/cpp/collatz
-exercise2/cpp/shoppinglist
+exercise2/cpp/collatz
+exercise3/cpp/shoppinglist
