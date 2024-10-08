@@ -4,7 +4,7 @@
       "cpus": 2
     },
     "waitFor": "onCreateCommand",
-    "updateContentCommand": "apt-get install -y build-essential",
+    "updateContentCommand": "sudo apt-get install -y build-essential",
     "postCreateCommand": "",
     "customizations": {
       "codespaces": {
