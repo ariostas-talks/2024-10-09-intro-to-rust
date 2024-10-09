@@ -107,6 +107,18 @@ It is very enjoyable to develop Rust code, and you end up being more confident i
 
 [comment]: # (!!! data-auto-animate)
 
+## Does this mean that C/C++ are dead?
+
+[comment]: # (!!! data-auto-animate)
+
+## Does this mean that C/C++ are dead?
+
+No. There's still a ton of software written in these languages, so they're not going away anytime soon. However, Rust can help with the development of new software, and replace parts pieces where memory safety is critical.
+
+However, Rust has been influencing the design of modern C++! Notably, C++23 and C++26 introduce have some features that are similar to those in Rust.
+
+[comment]: # (!!! data-auto-animate)
+
 ## Getting started with Rust
 
 Rust has a steep learning curve, so it can be a bit intimidating to get started.
@@ -122,7 +134,7 @@ Other good options to add more practical experience is to follow the [Rustlings 
 Today we have limited time, so here's the plan:
 
 1. I will start by showing you a quick demo of the software development tools in Rust and a brief introduction to the language.
-2. We will work through a few simple exercises that will give you some hands-on experience with Rust's safety features.
+2. We will work through a few simple exercises that will give you some hands-on experience with Rust.
 
 [comment]: # (!!! data-auto-animate)
 
