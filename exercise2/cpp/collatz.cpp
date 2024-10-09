@@ -34,7 +34,7 @@ int main(int argc, char* argv[]) {
         steps_to_one++;
     }
 
-    // Print the steps to get to 1
+    std::cout << "Starting number: " << *starting_number << std::endl;
     std::cout << "Steps to get to 1:" << std::endl;
     for (int i = 0; i <= steps_to_one; i++) {
         std::cout << (i ? "-> ": "") << *(starting_number + i) << " ";
